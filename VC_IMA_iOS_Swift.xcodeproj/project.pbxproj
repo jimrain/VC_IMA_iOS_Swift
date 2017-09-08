@@ -14,6 +14,9 @@
 		381A66D41F633FB700E458B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381A66D21F633FB700E458B1 /* LaunchScreen.storyboard */; };
 		381A66DF1F633FB700E458B1 /* VC_IMA_iOS_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A66DE1F633FB700E458B1 /* VC_IMA_iOS_SwiftTests.swift */; };
 		381A66EA1F633FB700E458B1 /* VC_IMA_iOS_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A66E91F633FB700E458B1 /* VC_IMA_iOS_SwiftUITests.swift */; };
+		381A66F81F63447F00E458B1 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381A66F71F63447F00E458B1 /* GoogleInteractiveMediaAds.framework */; };
+		381A66F91F63447F00E458B1 /* GoogleInteractiveMediaAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 381A66F71F63447F00E458B1 /* GoogleInteractiveMediaAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF9D17674B956A1F098980B3 /* Pods_VC_IMA_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B1833F11FC2CD8930F8221 /* Pods_VC_IMA_iOS_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		381A66FA1F63447F00E458B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				381A66F91F63447F00E458B1 /* GoogleInteractiveMediaAds.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		381A66C61F633FB700E458B1 /* VC_IMA_iOS_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VC_IMA_iOS_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381A66C91F633FB700E458B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +64,11 @@
 		381A66E51F633FB700E458B1 /* VC_IMA_iOS_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VC_IMA_iOS_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		381A66E91F633FB700E458B1 /* VC_IMA_iOS_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_IMA_iOS_SwiftUITests.swift; sourceTree = "<group>"; };
 		381A66EB1F633FB700E458B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381A66F71F63447F00E458B1 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = GoogleInteractiveMediaAds/GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
+		381A66FB1F6345C000E458B1 /* VC-IMA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VC-IMA-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0B1833F11FC2CD8930F8221 /* Pods_VC_IMA_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VC_IMA_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3621ED6FF971D6CE5133EE0 /* Pods-VC_IMA_iOS_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VC_IMA_iOS_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-VC_IMA_iOS_Swift/Pods-VC_IMA_iOS_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		B923853AD1529A22B70590F0 /* Pods-VC_IMA_iOS_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VC_IMA_iOS_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VC_IMA_iOS_Swift/Pods-VC_IMA_iOS_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381A66F81F63447F00E458B1 /* GoogleInteractiveMediaAds.framework in Frameworks */,
+				EF9D17674B956A1F098980B3 /* Pods_VC_IMA_iOS_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +101,13 @@
 		381A66BD1F633FB700E458B1 = {
 			isa = PBXGroup;
 			children = (
+				381A66F71F63447F00E458B1 /* GoogleInteractiveMediaAds.framework */,
 				381A66C81F633FB700E458B1 /* VC_IMA_iOS_Swift */,
 				381A66DD1F633FB700E458B1 /* VC_IMA_iOS_SwiftTests */,
 				381A66E81F633FB700E458B1 /* VC_IMA_iOS_SwiftUITests */,
 				381A66C71F633FB700E458B1 /* Products */,
+				63DBB4E1AFA3AEC368757FEF /* Pods */,
+				5BDC52506D55555210C17732 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +130,7 @@
 				381A66D01F633FB700E458B1 /* Assets.xcassets */,
 				381A66D21F633FB700E458B1 /* LaunchScreen.storyboard */,
 				381A66D51F633FB700E458B1 /* Info.plist */,
+				381A66FB1F6345C000E458B1 /* VC-IMA-Bridging-Header.h */,
 			);
 			path = VC_IMA_iOS_Swift;
 			sourceTree = "<group>";
@@ -125,6 +153,23 @@
 			path = VC_IMA_iOS_SwiftUITests;
 			sourceTree = "<group>";
 		};
+		5BDC52506D55555210C17732 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0B1833F11FC2CD8930F8221 /* Pods_VC_IMA_iOS_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63DBB4E1AFA3AEC368757FEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B923853AD1529A22B70590F0 /* Pods-VC_IMA_iOS_Swift.debug.xcconfig */,
+				B3621ED6FF971D6CE5133EE0 /* Pods-VC_IMA_iOS_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +177,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 381A66EE1F633FB700E458B1 /* Build configuration list for PBXNativeTarget "VC_IMA_iOS_Swift" */;
 			buildPhases = (
+				73E084AE2F249B31D9F734E4 /* [CP] Check Pods Manifest.lock */,
 				381A66C21F633FB700E458B1 /* Sources */,
 				381A66C31F633FB700E458B1 /* Frameworks */,
 				381A66C41F633FB700E458B1 /* Resources */,
+				2B67FABE9EC651FEC9F76077 /* [CP] Embed Pods Frameworks */,
+				065EE2EF56E3D84277180552 /* [CP] Copy Pods Resources */,
+				381A66FA1F63447F00E458B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065EE2EF56E3D84277180552 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VC_IMA_iOS_Swift/Pods-VC_IMA_iOS_Swift-resources.sh",
+				"$PODS_CONFIGURATION_BUILD_DIR/Brightcove-Player-Core/BCOVPUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VC_IMA_iOS_Swift/Pods-VC_IMA_iOS_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B67FABE9EC651FEC9F76077 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VC_IMA_iOS_Swift/Pods-VC_IMA_iOS_Swift-frameworks.sh",
+				"${PODS_ROOT}/Brightcove-Player-Core/ios/dynamic/BrightcovePlayerSDK.framework",
+				"${PODS_ROOT}/Brightcove-Player-IMA/ios/BrightcoveIMA.framework",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds/GoogleInteractiveMediaAds.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcovePlayerSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcoveIMA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VC_IMA_iOS_Swift/Pods-VC_IMA_iOS_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73E084AE2F249B31D9F734E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VC_IMA_iOS_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		381A66C21F633FB700E458B1 /* Sources */ = {
@@ -415,26 +525,38 @@
 		};
 		381A66EF1F633FB700E458B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B923853AD1529A22B70590F0 /* Pods-VC_IMA_iOS_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PVN9K3KC8B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleInteractiveMediaAds",
+				);
 				INFOPLIST_FILE = VC_IMA_iOS_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rainville.VC-IMA-iOS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VC_IMA_iOS_Swift/VC-IMA-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		381A66F01F633FB700E458B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3621ED6FF971D6CE5133EE0 /* Pods-VC_IMA_iOS_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PVN9K3KC8B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleInteractiveMediaAds",
+				);
 				INFOPLIST_FILE = VC_IMA_iOS_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rainville.VC-IMA-iOS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VC_IMA_iOS_Swift/VC-IMA-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -516,6 +638,7 @@
 				381A66F01F633FB700E458B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381A66F11F633FB700E458B1 /* Build configuration list for PBXNativeTarget "VC_IMA_iOS_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +647,7 @@
 				381A66F31F633FB700E458B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381A66F41F633FB700E458B1 /* Build configuration list for PBXNativeTarget "VC_IMA_iOS_SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +656,7 @@
 				381A66F61F633FB700E458B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
