@@ -21,7 +21,7 @@ class ViewController: UIViewController, BCOVPlaybackControllerDelegate, IMAWebOp
     var playbackService :BCOVPlaybackService? = nil
     var playbackController :BCOVPlaybackController? = nil
     var playerView :BCOVPUIPlayerView? = nil
-    
+    var notificationReceipt :NSObject? = nil
 
     
     @IBOutlet weak var videoContainer: UIView!
@@ -72,6 +72,18 @@ class ViewController: UIViewController, BCOVPlaybackControllerDelegate, IMAWebOp
         resumeAdAfterForeground()
     }
     
+    func resumeAdAfterForeground() {
+        // When the app goes to the background, the Google IMA library will pause
+        // the ad. This code demonstrates how you would resume the ad when entering
+        // the foreground.
+        let weakSelf: ViewController? = self
+        notificationReceipt = NotificationCenter.default.addObserver(forName: UIApplicationWillEnterForegroundNotification, object: nil, queue: nil, usingBlock: {(_ note: Notification) -> Void in
+            let strongSelf: ViewController? = weakSelf
+            if strongSelf?.adIsPlaying && !strongSelf?.isBrowserOpen {
+                strongSelf?.playbackController?.resumeAd()
+            }
+        })
+    }
 
 
 }
